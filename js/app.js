@@ -68,13 +68,13 @@ Player.prototype.handleInput = function(direction) {
     }
     //if character reaches the river, tell player they won and reset game
     if (this.y < 0) {
-        //player.reset();
+       
+        //reset player position
         setTimeout(function(){
             if(confirm('You won! Start over!')){
-              //
               player.reset();
             }
-          }, 100);
+          }, 200);
     }
 }
 
