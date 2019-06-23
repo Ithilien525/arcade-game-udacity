@@ -70,7 +70,7 @@ Player.prototype.handleInput = function(direction) {
     if (this.y < 0) {
         //player.reset();
         setTimeout(function(){
-            if(confirm('Win~ start again?')){
+            if(confirm('You won! Start over!')){
               //
               player.reset();
             }
